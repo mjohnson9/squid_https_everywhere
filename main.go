@@ -48,7 +48,7 @@ func handleIncomingMessage(messageInfo *MessageInfo) {
 	if err != nil {
 		panic(err)
 	}
-	if !applied {
+	if !applied || newUrl == messageInfo.URL {
 		outputChannel <- messageInfo.RequestID + " OK\n"
 		return
 	}
