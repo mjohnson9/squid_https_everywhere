@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"./https_everywhere"
+	"github.com/nightexcessive/squid_https_everywhere/https_everywhere"
 )
 
 var (
